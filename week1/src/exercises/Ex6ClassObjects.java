@@ -23,6 +23,13 @@ public class Ex6ClassObjects {
 
     void program() {
         // TODO
+        Hero hero1 = new Hero();
+        Hero hero2 = new Hero();
+
+        out.print("What's the name of the hero 1? >");
+        hero1.name = sc.nextLine();
+
+        out.print("How strong is Hercules >");
     }
 
     // ------ The class to use  -----------
