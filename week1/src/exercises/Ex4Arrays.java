@@ -23,7 +23,7 @@ public class Ex4Arrays {
     void program() {
         // TODO
         out.print("Input 5 integers (space between, then enter) > ");
-        String s[]= sc.nextLine().split(" ");
+        String s[] = sc.nextLine().split(" ");
 
         out.println("Array is: " + Arrays.toString(s));
 
