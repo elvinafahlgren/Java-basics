@@ -45,6 +45,7 @@ public class Ex8DayNumber {
 
     }
 
+
     void printResult(int year, int month, int day, int dayNbr) {
         // TODO
     }
@@ -62,3 +63,19 @@ public class Ex8DayNumber {
 
 
 }
+/*8.  See Ex8DayNumber. Implement a program that calculates the day number for a given year.
+    NOTE: Main task here is functional decomposition. Assume a top level method and decompose.
+    Test any non trivial method!
+
+    If new to programming: Make a plan and discuss with assistant before staring to implement!
+
+    Program should run like:
+
+    Input the year > 2018
+    Input the month number > 8
+    Input the day number > 27
+    Ordinal number for 27/8 in 2018 is: 239
+    2018 is not a leap year
+
+    TIP: See web how to calculate leap year.
+ */

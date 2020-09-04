@@ -44,8 +44,34 @@ public class Ex7RPS {
 
         // TODO Write the game here. Use smallest step then surround with loop!!!!
 
+        for (int i = 0; i <= maxRounds; i++){
+            out.print("Select 1, 2 or 3 (for R, P or S) > ");
+            human = sc.nextInt();
+            computer = rand.nextInt((3)) + 1;
+
+            out.println("Computer choose " + computer);
+
+            if ( (human == 1 && computer == 3) || (human == 2 && computer == 1) || (human == 3 && computer == 2) ){
+                out.println("You won!");
+                total++;
+            }
+            else if ( (computer == 1 && human == 3) || (computer == 2 && human == 1) || (computer == 3 && human == 2) ){
+                out.println("You lose:(");
+
+                if (total - 1 >= 0){
+                    total--;
+                }
+            }
+            else if ( human == computer){
+                out.println("A draw.");
+            }
+
+            out.println("Result: " + total);
+        }
+
 
         out.println("Game over! ");
+
         if (total == 0) {
             out.println("Draw");
         } else if (total > 0) {
