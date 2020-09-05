@@ -19,15 +19,15 @@ public class Ex5Methods {
         // All, except last,  should print true
         out.println(sumTo(5) == 15);     // 1 + 2 + ... + 5 = 15
         out.println(sumTo(23) == 276);
-        //out.println(factorial(3) == 6);    // 3 * 2 * 1 = 6
-        //out.println(factorial(5) == 120);
-        //out.println(digitSum(1111) == 4);   // 1 + 1 + 1 + 1 = 4
-        //out.println(digitSum(12345) == 15);
+        out.println(factorial(3) == 6);    // 3 * 2 * 1 = 6
+        out.println(factorial(5) == 120);
+        out.println(digitSum(1111) == 4);   // 1 + 1 + 1 + 1 = 4
+        out.println(digitSum(12345) == 15);
 
         int[] arr = {10, 20, 30, 40, 50};
-        //out.println(next(arr, 2) == 40);    // Find *next* value given index
+        out.println(next(arr, 2) == 40);    // Find *next* value given index
                                                   // Index 2 is 30 so next is 40.
-        //out.println(next(arr, 4) == 10);    // Index 4 is 50 so next is 10 (circular).
+        out.println(next(arr, 4) == 10);    // Index 4 is 50 so next is 10 (circular).
 
         String winner = "Olle";
         // A special case, should print: "Winner is Olle" (or whatever name)
@@ -37,11 +37,47 @@ public class Ex5Methods {
     // ------ Write methods below this  -----------
 
     // Declaration
-    int sumTo(int n) {
+    int sumTo(int a) {
         // TODO
-        return 0;
+        int sum = a;
+        for (int i = 0; i < a; i++){
+            sum = sum + i;
+        }
+        return sum;
     }
 
     // TODO More methods here
 
+    int factorial(int b) {
+        // TODO
+        int product = b;
+        for (int i = 1; i < b; i++){
+            product = product * i;
+        }
+        return product;
+    }
+
+    int digitSum(int c) {
+        // TODO
+        String line = Integer.toString(c);              //parse int to string
+        String numbers[] = line.split("");        //split between all unit of numbers
+
+        int sum = 0;
+        for (int i = 0; i < numbers.length ; i++) {
+            sum += Integer.parseInt(numbers[i]);
+        }
+
+        return sum;
+    }
+
+    int next (int[] array, int index){
+        int x = 0;
+        if (index < array.length - 1){
+            x = array[index + 1];
+        }
+        else if(index == array.length - 1){
+            x = array[0];
+        }
+        return x;
+    }
 }

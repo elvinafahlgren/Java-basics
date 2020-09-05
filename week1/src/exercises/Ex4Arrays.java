@@ -23,7 +23,7 @@ public class Ex4Arrays {
     void program() {
         // TODO
         out.print("Input 5 integers (space between, then enter) > ");
-        String s[]= sc.nextLine().split(" ");
+        String s[] = sc.nextLine().split(" ");
 
         out.println("Array is: " + Arrays.toString(s));
 
@@ -31,7 +31,7 @@ public class Ex4Arrays {
 
         int value = sc.nextInt();
 
-        for(int i = 0 ; i < s.length; i++){
+        for(int i = 0; i < s.length; i++){
             if(Integer.parseInt(s[i]) == value){
                 out.println("Value " + value + " is at index " + i);
                 break;
