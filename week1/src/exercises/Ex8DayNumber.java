@@ -38,16 +38,57 @@ public class Ex8DayNumber {
 
         // Write the code to call top level method here
         // Then break the method down in smaller methods, call them etc.
-        int dayNbr = 0;    // TODO Replace 0 with a method that solves it!
+        int dayNbr = DayOfYear(year, month, day);    // TODO Replace 0 with a method that solves it!
 
         // ---- Out ----
         printResult(year, month, day, dayNbr);
 
     }
 
+    int DayOfYear(int y, int m, int d){
+        if(m < 3){
+            return dayMonth(m) + d;
+        }
+        return dayMonth(m) + d + leepYear(y);
+    }
+
+    int dayMonth(int mon){
+        int[] montharr = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int dayM = 0;
+        for(int i = 1; i < mon; i++){
+            dayM += montharr[i - 1];
+        }
+        return dayM;
+    }
+
+    int leepYear(int year){
+        if(year % 4 == 0)
+        {
+            if( year % 100 == 0)
+            {
+                if ( year % 400 == 0)
+                    return 1;
+                else
+                    return 0;
+            }
+            else
+                return 1;
+        }
+        else {
+            return 0;
+        }
+    }
+
 
     void printResult(int year, int month, int day, int dayNbr) {
         // TODO
+        out.println("Ordinal number for " + day + "/" + month + " in " + year + " is: " + dayNbr);
+        if(leepYear(year) == 1){
+            out.println(year + " is a leap year");
+        }
+        else{
+            out.println(year + " is not a leap year");
+        }
     }
 
 

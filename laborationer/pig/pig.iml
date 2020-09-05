@@ -7,8 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="JavaFX" level="application" />
-    <orderEntry type="library" exported="" name="JavaFX" level="application" />
-    <orderEntry type="library" exported="" name="week1" level="project" />
   </component>
 </module>
