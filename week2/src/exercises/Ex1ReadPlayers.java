@@ -31,17 +31,34 @@ public class Ex1ReadPlayers {
         int points;    // ... and points
 
         // TODO Add a constructor
+        Player(String n, int p){
+            this.name = n;          //this används för att sätta name till n, inte bara för en input
+            this.points = p;
+
+        }
     }
 
     // ---------- Methods -------------------
 
      Player[] inputPlayers() {
         // TODO
-        return null;   // For now
+         out.print("How many players? > ");
+         Player[] players = new Player[sc.nextInt()];
+         sc.nextLine();
+
+         for(int i = 0; i < players.length; i++) {
+             out.print("Name for player " + (i + 1) + " > ");
+             players[i] = new Player(sc.nextLine(), 0);
+         }
+
+         return players;
     }
 
     void outPlayers(Player[] players){
        // TODO
+        for(int i = 0; i < players.length; i++) {
+            out.println("Name " + players[i].name + " points " + players[i].points);
+        }
     }
 
 
