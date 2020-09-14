@@ -22,6 +22,7 @@ public class Ex2ArrayMethods {
     final static Random rand = new Random();
 
     void program() {
+
         int[] arr = {1, 2, 2, 5, 3, 2, 4, 2, 7};  // Hard coded test data
 
         // TODO uncomment one at a time and implement
@@ -31,19 +32,19 @@ public class Ex2ArrayMethods {
         out.println(count(arr, 7) == 1);
 
         // Generate array with 100 elements with 25% distribution of -1's and 1's (remaining will be 0)
-        //arr = generateDistribution(100, 0.25, 0.25);
-        //out.println(count(arr, 1) == 25);
-        //out.println(count(arr, -1) == 25);
-        //out.println(count(arr, 0) == 50);
+        arr = generateDistribution(100, 0.25, 0.25);
+        out.println(count(arr, 1) == 25);
+        out.println(count(arr, -1) == 25);
+        out.println(count(arr, 0) == 50);
 
         // Generate array with 14 elements with 40% 1's and 30% -1's
-        //arr = generateDistribution(14, 0.4, 0.3);
-        //out.println(count(arr, 1) == 6);
-        //out.println(count(arr, -1) == 4);
+        arr = generateDistribution(14, 0.4, 0.3);
+        out.println(count(arr, 1) == 6);
+        out.println(count(arr, -1) == 4);
 
         for (int i = 0; i < 10; i++) {
             // Random reordering of arr, have to check by inspecting output
-            //shuffle(arr);
+            shuffle(arr);
             out.println(Arrays.toString(arr));  // Does it look random?
         }
     }
@@ -62,7 +63,28 @@ public class Ex2ArrayMethods {
         return total;
     }
 
-    int[] generateDistribution(int arrlength, int a, int b){
+    int[] generateDistribution(double arrlength, double pos, double neg){
+        int array[] = new int[(int)arrlength];
 
+        for(int i = 0; i < Math.round(arrlength * neg); i++){
+            array[i] = -1;
+        }
+
+        for(double i = Math.round(arrlength * neg); i < Math.round(arrlength * (pos + neg)); i++){
+            array[(int)i] = 1;
+        }
+
+        return array;
     }
+
+    int[] shuffle(int[] array){
+        for(int i = 0; i < array.length; i++){
+            int randomIndexToSwap = rand.nextInt(array.length);
+            int temp = array[randomIndexToSwap];
+            array[randomIndexToSwap] = array[i];
+            array[i] = temp;
+;        }
+        return array;
+    }
+
 }

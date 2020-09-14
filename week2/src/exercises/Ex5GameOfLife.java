@@ -8,8 +8,12 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.util.Pair;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
+import java.util.Vector;
 
 import static java.lang.Math.round;
 import static java.lang.Math.sqrt;
@@ -41,32 +45,95 @@ public class Ex5GameOfLife extends Application {
     }
 
     // This is the *only* accepted modifiable instance variable in program.
-    Cell[][] world;
+    Cell[][] world = new Cell[100][100];
+    int nLocations = 10000;
+    double distribution = 0.15;   // % of locations holding a Cell
 
     @Override
     public void init() {
-        // test();        // <--------------- Uncomment to test!
-        int nLocations = 10000;
-        double distribution = 0.15;   // % of locations holding a Cell
+        //test();        // <--------------- Uncomment to test!
         // TODO Create and populate world
+        initWorld();
+        fillWorld();
     }
 
+    
     // Implement this method (using functional decomposition)
     // Every involved method should be tested, see below, method test()
     // This method is automatically called by a JavaFX timer (don't need to call it)
+
     void update() {
         // TODO Update (logically) the world
+        for(int i = 0; i < world.length; i++){
+            for(int j = 0; j < world.length; j++){
+                int neighbours = sumNeighbours(i, j);
+                rules(i, j, neighbours);
+            }
+        }
+
     }
 
     // -------- Write methods below this --------------
 
+
+    void initWorld(){
+        for(int i = 0; i < 100; i++) {
+            for (int j = 0; j < 100; j++) {
+                world[i][j] = Cell.DEAD;
+            }
+        }
+    }
+
+    void fillWorld(){
+        for(int k = 0; k < distribution * nLocations; k++){
+            boolean finding = false;
+            while (!finding){
+                int x = rand.nextInt(100);
+                int y = rand.nextInt(100);
+                if(world[x][y] != Cell.ALIVE){
+                    world[x][y] = Cell.ALIVE;
+                    finding = true;
+                }
+            }
+        }
+    }
+
+    int sumNeighbours(int row, int col) {
+        int neighbours = 0;
+        for (int i = -1; i <= 1; i++) {
+            if (row + i > 0 && row + i < 100) {
+                for (int j = -1; j <= 1; j++) {
+                    if (col + j > 0 && col + j < 100){
+                        if (world[row + i][col + j] == Cell.ALIVE){
+                            neighbours ++;
+                        }
+                    }
+                }
+            }
+        }
+        if(world[row][col] == Cell.ALIVE)
+            neighbours--;
+        return neighbours;
+    }
+
+    void rules(int row, int col, int neighbours){
+        if(world[row][col] == Cell.ALIVE){
+            if(neighbours < 2 || neighbours > 3){
+                world[row][col] = Cell.DEAD;
+            }
+        }
+        if(world[row][col] == Cell.DEAD && neighbours == 3){
+            world[row][col] = Cell.ALIVE;
+        }
+    }
 
 
 
     // ---------- Testing -----------------
     // Here you run your tests i.e. call your logic methods
     // to see that they really work
-    void test() {
+
+    void test(){
         // Hard coded test world
         Cell[][] testWorld = {
                 {Cell.ALIVE, Cell.ALIVE, Cell.DEAD},
