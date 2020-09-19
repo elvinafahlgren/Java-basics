@@ -71,13 +71,11 @@ public class Ex5Methods {
     }
 
     int next (int[] array, int index){
-        int x = 0;
+
         if (index < array.length - 1){
-            x = array[index + 1];
+            return array[index + 1];
         }
-        else if(index == array.length - 1){
-            x = array[0];
-        }
-        return x;
+        return array[0];
+
     }
 }

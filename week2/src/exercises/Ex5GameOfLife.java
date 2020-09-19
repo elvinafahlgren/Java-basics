@@ -1,6 +1,7 @@
 package exercises;
 
-import javafx.animation.AnimationTimer;
+import javafx.animation
+        .AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;

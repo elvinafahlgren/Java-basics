@@ -23,6 +23,7 @@ public class Ex6ClassObjects {
 
     void program() {
         // TODO
+        
     }
 
     // ------ The class to use  -----------
