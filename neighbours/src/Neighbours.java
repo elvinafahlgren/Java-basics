@@ -51,38 +51,12 @@ public class Neighbours extends Application {
     void updateWorld() {
 
         // % of surrounding neighbours that are like me
-        final double threshold = 0.3;
-        // TODO Update logical state of world
-        State[][] moves = new State[world.length][world.length];
-        //
-        for(int i = 0; i < world.length; i++) {
-            for (int j = 0; j < world.length; j++) {
-                if(world[i][j] == Actor.NONE){
-                    moves[i][j] = State.NA;
-                }
-                else{
-                    moves[i][j] = sumNeighbours(i, j, world, threshold);
-                }
-            }
-        }
+        final double threshold = 0.7;
 
-        for(int i = 0; i < moves.length; i++) {
-            for (int j = 0; j < moves.length; j++) {
-                if(moves[i][j] == State.UNSATISFIED){
-                    boolean finding = false;
-                    while (!finding) {
-                        int x = rand.nextInt(world.length);
-                        int y = rand.nextInt(world.length);
-                        if(world[x][y] == Actor.NONE){
-                            world[x][y] = world[i][j];
-                            world[i][j] = Actor.NONE;
-                            finding = true;
-                        }
-                    }
-                }
-            }
-        }
+        // Create states for each actor in a separate matrix.
+        State[][] states = getStates(world, threshold);
 
+        world = getUpdate(states);
     }
 
     // This method initializes the world variable with a random distribution of Actors
@@ -95,11 +69,9 @@ public class Neighbours extends Application {
         // %-distribution of RED, BLUE and NONE
         double[] dist = {0.25, 0.25, 0.50};
         // Number of locations (places) in world (square)
-        int nLocations = 900;
+        int nLocations = 90000;
 
-        // TODO Create and populate world
-        world = fillWorld(world, dist, nLocations);
-
+        world = generateWorld(world, dist, nLocations);
 
         // Should be last
         fixScreenSize(nLocations);
@@ -109,12 +81,20 @@ public class Neighbours extends Application {
     //---------------- Methods ----------------------------
 
 
-    Actor[][] fillWorld(Actor[][] world, double[] dist, int nLocations){
-        world = new Actor[(int)sqrt(nLocations)][(int)sqrt(nLocations)];
+    Actor[][] generateWorld(Actor[][] world, double[] dist, int nLocations){
+        final int SIZE = (int)sqrt(nLocations);
+        // Create world.
+        world = new Actor[SIZE][SIZE];
 
+        world = fillWorld(world, dist, nLocations);
 
+        return world;
+    }
+
+    Actor[][] fillWorld(Actor[][] world, double[] dist, int nLocations) {
         Actor[] temp = {Actor.RED, Actor.BLUE, Actor.NONE};
-        //GÖR TILL METOD, FILLWITHCOLOUR
+
+        // Fill the world with red and blue actors.
         for(int i = 0; i < dist.length - 1; i++) {
             for (int k = 0; k < dist[i] * nLocations; k++) {
                 boolean finding = false;
@@ -128,7 +108,7 @@ public class Neighbours extends Application {
                 }
             }
         }
-        //GÖR TILL METOD, FILLWITHNONE
+        // Fill rest with none actors.
         for(int i = 0; i < world.length; i++) {
             for (int j = 0; j < world.length; j++) {
                 if (world[i][j] == null) {
@@ -139,28 +119,33 @@ public class Neighbours extends Application {
         return world;
     }
 
-    State sumNeighbours(int row, int col, Actor[][] world, double threshold) {
-        double neighbours = 0;
-        double total_neighbours = 0;
+    State[][] getStates(Actor[][] world, double threshold) {
 
-        for (int i = -1; i <= 1; i++) {
-            if (row + i > 0 && row + i < world.length) {
-                for (int j = -1; j <= 1; j++) {
-                    if (col + j > 0 && col + j < world.length){
-                        if (world[row + i][col + j] == world[row][col]){
-                            neighbours ++;
-                        }
-                        total_neighbours++;
-                    }
+        State[][] states = new State[world.length][world.length];
+
+        for (int i = 0; i < world.length; i++) {
+            for (int j = 0; j < world.length; j++) {
+                // If current actor is none, state is NA.
+                if (world[i][j] == Actor.NONE) {
+                    states[i][j] = State.NA;
+                }
+                // Otherwise, check satisfaction.
+                else {
+                    states[i][j] = getSatisfaction(i, j, world, threshold);
                 }
             }
         }
-        neighbours--;
-        total_neighbours--;
-        if(neighbours <= 0){
+        return states;
+    }
+
+    State getSatisfaction(int row, int col, Actor[][] world, double threshold) {
+
+        double ratio = getRatio(row, col, world, threshold);
+        /*
+        if(ratio <= 0){
             return State.UNSATISFIED;
-        }
-        if(neighbours/total_neighbours >= threshold){
+        }*/
+        if(ratio >= threshold){
             return State.SATISFIED;
         }
         else{
@@ -168,11 +153,64 @@ public class Neighbours extends Application {
         }
     }
 
+    double getRatio(int row, int col, Actor[][] world, double threshold){
+        double sameColourNeighbour = 0;
+        double totalNeighbours = 0;
+
+
+        for (int i = -1; i <= 1; i++) {
+            if (row + i > 0 && row + i < world.length) {
+                for (int j = -1; j <= 1; j++) {
+                    if (col + j > 0 && col + j < world.length){
+                        if (world[row + i][col + j] == world[row][col]){
+                            sameColourNeighbour ++;
+                        }
+                        if (world[row + i][col + j] != Actor.NONE){
+                            totalNeighbours++;
+                        }
+                    }
+                }
+            }
+        }
+        sameColourNeighbour--;
+        totalNeighbours--;
+        double ratio = sameColourNeighbour / totalNeighbours;
+        return ratio;
+    }
+
+
+    Actor[][] getUpdate(State[][] states){
+
+        for(int i = 0; i < states.length; i++) {
+            for (int j = 0; j < states.length; j++) {
+                if(states[i][j] == State.UNSATISFIED){
+                    boolean finding = false;
+                    while (!finding) {
+                        int x = rand.nextInt(world.length);
+                        int y = rand.nextInt(world.length);
+                        if(world[x][y] == Actor.NONE){
+                            world[x][y] = world[i][j];
+                            world[i][j] = Actor.NONE;
+                            finding = true;
+                        } else if(states[x][y] == State.UNSATISFIED && world[i][j] != world[x][y]){
+                            Actor temp = world[x][y];
+                            world[x][y] = world[i][j];
+                            world[i][j] = temp;
+                        }
+                    }
+                }
+            }
+        }
+
+        return world;
+    }
+
     // Check if inside world
     boolean isValidLocation(int size, int row, int col) {
         return 0 <= row && row < size &&
                 0 <= col && col < size;
     }
+
 
 
     // ------- Testing -------------------------------------

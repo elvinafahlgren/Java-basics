@@ -41,11 +41,11 @@ public class Ex2ArrayMethods {
 
         // Remove all duplicates from arr2, ... (original unchanged, copy created)
         // NOTE: Assume arr is sorted in increasing order and > 0
-        //out.println(Arrays.toString(removeDupl(arr2)).equals("[1, 2, 3]"));
+        out.println(Arrays.toString(removeDupl(arr2)).equals("[1, 2, 3]"));
         out.println(Arrays.toString(arr2).equals("[1, 2, 2, 3, 3]"));   // arr2 unchanged!
-        //out.println(Arrays.toString(removeDupl(arr3)).equals("[1, 2, 3, 4, 5]"));
-        //out.println(Arrays.toString(removeDupl(arr4)).equals("[1]"));
-        //out.println(Arrays.toString(removeDupl(arr5)).equals("[1]"));
+        out.println(Arrays.toString(removeDupl(arr3)).equals("[1, 2, 3, 4, 5]"));
+        out.println(Arrays.toString(removeDupl(arr4)).equals("[1]"));
+        out.println(Arrays.toString(removeDupl(arr5)).equals("[1]"));
 
 
         arr1 = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
@@ -83,6 +83,30 @@ public class Ex2ArrayMethods {
             arr[0] = last;
         }
         return arr;
+    }
+
+    int[] removeDupl(int[] arr){
+        //temporär array
+        int[] temp = new int[arr.length];
+
+
+        int j = 0;
+        int length = 1;
+        for(int i = 0; i < arr.length - 1; i++) {
+            //om det nuvarande värdet i arrayen
+            if(arr[i] != arr[i + 1]) {
+                temp[j++] = arr[i];
+                length++;
+            }
+        }
+        temp[j++] = arr[arr.length-1];
+
+        //ny array med den nya längden, lägger in all data från temp arrayen
+        int[] newArr = new int[length];
+        for(int i = 0; i < length; i++) {
+            newArr[i] = temp[i];
+        }
+        return newArr;
     }
 
 }
