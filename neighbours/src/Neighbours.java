@@ -49,10 +49,40 @@ public class Neighbours extends Application {
     // This is the method called by the timer to update the world
     // (i.e move unsatisfied) approx each 1/60 sec.
     void updateWorld() {
-        // % of surrounding neighbours that are like me
-        final double threshold = 0.7;
 
+        // % of surrounding neighbours that are like me
+        final double threshold = 0.3;
         // TODO Update logical state of world
+        State[][] moves = new State[world.length][world.length];
+        //
+        for(int i = 0; i < world.length; i++) {
+            for (int j = 0; j < world.length; j++) {
+                if(world[i][j] == Actor.NONE){
+                    moves[i][j] = State.NA;
+                }
+                else{
+                    moves[i][j] = sumNeighbours(i, j, world, threshold);
+                }
+            }
+        }
+
+        for(int i = 0; i < moves.length; i++) {
+            for (int j = 0; j < moves.length; j++) {
+                if(moves[i][j] == State.UNSATISFIED){
+                    boolean finding = false;
+                    while (!finding) {
+                        int x = rand.nextInt(world.length);
+                        int y = rand.nextInt(world.length);
+                        if(world[x][y] == Actor.NONE){
+                            world[x][y] = world[i][j];
+                            world[i][j] = Actor.NONE;
+                            finding = true;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
     // This method initializes the world variable with a random distribution of Actors
@@ -68,9 +98,7 @@ public class Neighbours extends Application {
         int nLocations = 900;
 
         // TODO Create and populate world
-        fillWorld(dist, nLocations);
-
-
+        world = fillWorld(world, dist, nLocations);
 
 
         // Should be last
@@ -81,22 +109,62 @@ public class Neighbours extends Application {
     //---------------- Methods ----------------------------
 
 
-    void fillWorld(double[] dist, int nLocations){
+    Actor[][] fillWorld(Actor[][] world, double[] dist, int nLocations){
         world = new Actor[(int)sqrt(nLocations)][(int)sqrt(nLocations)];
-        Actor[] temp = {Actor.RED, Actor.BLUE, Actor.NONE};
 
-        for(int i = 0; i < dist.length; i++) {
+
+        Actor[] temp = {Actor.RED, Actor.BLUE, Actor.NONE};
+        //GÖR TILL METOD, FILLWITHCOLOUR
+        for(int i = 0; i < dist.length - 1; i++) {
             for (int k = 0; k < dist[i] * nLocations; k++) {
                 boolean finding = false;
                 while (!finding) {
                     int x = rand.nextInt((int) sqrt(nLocations));
                     int y = rand.nextInt((int) sqrt(nLocations));
-                    if (world[x][y] != temp[i]) {
+                    if (world[x][y] == null) {
                         world[x][y] = temp[i];
                         finding = true;
                     }
                 }
             }
+        }
+        //GÖR TILL METOD, FILLWITHNONE
+        for(int i = 0; i < world.length; i++) {
+            for (int j = 0; j < world.length; j++) {
+                if (world[i][j] == null) {
+                    world[i][j] = temp[temp.length - 1];
+                }
+            }
+        }
+        return world;
+    }
+
+    State sumNeighbours(int row, int col, Actor[][] world, double threshold) {
+        double neighbours = 0;
+        double total_neighbours = 0;
+
+        for (int i = -1; i <= 1; i++) {
+            if (row + i > 0 && row + i < world.length) {
+                for (int j = -1; j <= 1; j++) {
+                    if (col + j > 0 && col + j < world.length){
+                        if (world[row + i][col + j] == world[row][col]){
+                            neighbours ++;
+                        }
+                        total_neighbours++;
+                    }
+                }
+            }
+        }
+        neighbours--;
+        total_neighbours--;
+        if(neighbours <= 0){
+            return State.UNSATISFIED;
+        }
+        if(neighbours/total_neighbours >= threshold){
+            return State.SATISFIED;
+        }
+        else{
+            return State.UNSATISFIED;
         }
     }
 
