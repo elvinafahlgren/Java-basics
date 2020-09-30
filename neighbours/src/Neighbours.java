@@ -140,11 +140,7 @@ public class Neighbours extends Application {
 
     State getSatisfaction(int row, int col, Actor[][] world, double threshold) {
 
-        double ratio = getRatio(row, col, world, threshold);
-        /*
-        if(ratio <= 0){
-            return State.UNSATISFIED;
-        }*/
+        double ratio = getRatio(row, col, world);
         if(ratio >= threshold){
             return State.SATISFIED;
         }
@@ -153,55 +149,64 @@ public class Neighbours extends Application {
         }
     }
 
-    double getRatio(int row, int col, Actor[][] world, double threshold){
+    double getRatio(int row, int col, Actor[][] world){
         double sameColourNeighbour = 0;
         double totalNeighbours = 0;
 
 
         for (int i = -1; i <= 1; i++) {
-            if (row + i > 0 && row + i < world.length) {
+            if (row + i >= 0 && row + i < world.length) {
                 for (int j = -1; j <= 1; j++) {
-                    if (col + j > 0 && col + j < world.length){
-                        if (world[row + i][col + j] == world[row][col]){
-                            sameColourNeighbour ++;
+                    if (col + j >= 0 && col + j < world.length) {
+                        if (world[row + i][col + j] == world[row][col]) {
+                            sameColourNeighbour++;
                         }
-                        if (world[row + i][col + j] != Actor.NONE){
+                        if (world[row + i][col + j] != Actor.NONE) {
                             totalNeighbours++;
                         }
                     }
                 }
             }
         }
-        sameColourNeighbour--;
-        totalNeighbours--;
         double ratio = sameColourNeighbour / totalNeighbours;
+
+        if (ratio != 1) {
+            sameColourNeighbour--;
+            totalNeighbours--;
+            ratio = sameColourNeighbour / totalNeighbours;
+        }
+
         return ratio;
     }
 
-
     Actor[][] getUpdate(State[][] states){
+        // Create temporary world that we will need for
+        Actor[][] tempWorld = new Actor[world.length][world.length];
+
 
         for(int i = 0; i < states.length; i++) {
             for (int j = 0; j < states.length; j++) {
+
+                // If states is unsatisfied, we want the actor at the same position to change position.
                 if(states[i][j] == State.UNSATISFIED){
                     boolean finding = false;
                     while (!finding) {
                         int x = rand.nextInt(world.length);
                         int y = rand.nextInt(world.length);
-                        if(world[x][y] == Actor.NONE){
+
+                        // If the world hasn't an actor at this random position and we hasn't already used this positon
+                        // ...then change to this position
+                        if(world[x][y] == Actor.NONE && tempWorld[x][y] == null){
+                            // We need to fill the position of the temp world so we cannot use this place again.
+                            tempWorld[x][y] = world[i][j];
                             world[x][y] = world[i][j];
                             world[i][j] = Actor.NONE;
                             finding = true;
-                        } else if(states[x][y] == State.UNSATISFIED && world[i][j] != world[x][y]){
-                            Actor temp = world[x][y];
-                            world[x][y] = world[i][j];
-                            world[i][j] = temp;
                         }
                     }
                 }
             }
         }
-
         return world;
     }
 

@@ -34,5 +34,12 @@ public class Ex5PointOfInequality {
 
     // ----------- Method(s) -----------------------
 
+    int diffIndex(int[] arr0, int[] arr1){
+        for(int i = 0; i < arr0.length; i++){
+            if()
+        }
+        return -1;
+    }
+
 
 }

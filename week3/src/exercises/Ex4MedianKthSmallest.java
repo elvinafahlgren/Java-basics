@@ -75,11 +75,19 @@ public class Ex4MedianKthSmallest {
     }
 
     int kSmallest(int[] arr, int k){
+        int comp = 0;
         sort(arr);
-        for(int i = 0; i < arr.length; i++){
-            if()
+        for(int i = 0; i < arr.length - 1; i++){
+            // If next value isn't the same as current value, count
+            if(arr[i] != arr[i + 1])
+                comp++;
+
+            // When we have counted to k, then return current value
+            if(comp == k)
+                return arr[i];
+
         }
-        return
+        return arr[arr.length - 1];
     }
 
 }
