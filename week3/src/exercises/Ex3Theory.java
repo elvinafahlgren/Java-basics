@@ -25,15 +25,15 @@ public class Ex3Theory {
         char ch = '1';
         double d = 1.0;
 
-        i = d;
-        i = ch;
-        ch = i;
-        ch = d;
-        d = i;
-        d = ch;
+        i = d;      // double can't be int (it contains decimals)
+        i = ch;     // works because we get the ASCII - value (prints 49)
+        ch = i;     // int can't be char because int can contain many numbers, char only one character
+        ch = d;     // same as above
+        d = i;      // int can be double
+        d = ch;     // same as i = ch
 
-        i = (int) d;
-        (double) i = d;
+        i = (int) d;        // type causing. this works because decimals can be removed
+        (double) i = d;     // type causing. can't change variable type from type causing
         */
 
         // 2. Uncomment and run.  What will be printed. Explain! ---------
@@ -47,16 +47,19 @@ public class Ex3Theory {
         i1 = i2;
         out.println(i3[1]);
         i3 = i1;
-        out.println(i3[1]);*/
+        out.println(i3[1]);     //11 because i3 pointing at i1 and i1 is pointing at i2
+        */
 
         // 3. What will be printed. Explain! (methods below) ----------------
         /*int a = 1;
         int b = 2;
-        swap(a, b);
+        swap(a, b);                 //the swap method takes in a and b as new integers-pointers
+                                    //...  not changing the original integers
+                                    //we get pointers that pointing at pointers
         out.println(a + ", " + b);
 
         int[] arr = {1, 2};
-        swap(arr);
+        swap(arr);                  //this swap method takes in the actual array and changing the actual values
         out.println(Arrays.toString(arr));
 
         Player p1 = new Player();
@@ -74,13 +77,14 @@ public class Ex3Theory {
         /*int[] a1 = getArr();
         int[] a2 = getArr();
 
-        out.println(a1.length == a2.length);
-        out.println(a1[0] == a2[0]);
-        out.println(a1 == a2);
+        out.println(a1.length == a2.length); //printing true because same length (same int-value)
+        out.println(a1[0] == a2[0]);         //true because same value at index 0 (same int-value)
+        out.println(a1 == a2);               //printing false because a1 and a2 are two different objects
         */
 
         // 5. If uncommenting you'll get a compile error. Why? (methods below)
-        //out.println(add(1,1));
+        //out.println(add(1,1));               //ambiguous (=mångtydlig) method call.
+                                             //both add(double, int) and add(int, double) match
     }
 
     // ---------- Some methods used ---------------------------

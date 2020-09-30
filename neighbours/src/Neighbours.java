@@ -69,7 +69,7 @@ public class Neighbours extends Application {
         // %-distribution of RED, BLUE and NONE
         double[] dist = {0.25, 0.25, 0.50};
         // Number of locations (places) in world (square)
-        int nLocations = 90000;
+        int nLocations = 900;
 
         world = generateWorld(world, dist, nLocations);
 
