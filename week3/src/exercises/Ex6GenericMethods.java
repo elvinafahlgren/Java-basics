@@ -42,9 +42,9 @@ public class Ex6GenericMethods {
         out.println(!Arrays.toString(ss).equals(origSS));
 
         // sort should also be generic (this is hard)
-        //sort(is);
+        sort(is);
         out.println(Arrays.toString(is).equals(origIs));
-        //sort(ss);
+        sort(ss);
         out.println(Arrays.toString(ss).equals(origSS));
 
     }
@@ -75,12 +75,11 @@ public class Ex6GenericMethods {
         }
     }
 
-    <T extends Comparable> void sort(T[] arr){
-        char ch[] = new char[arr.length];
+    <T extends Comparable<? super T>> void sort(T[] arr){
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
-                if (arr[i] < arr[j]) {
+                if (arr[i].compareTo(arr[j]) < 0) {         // Sort generic method, see https://cs.brynmawr.edu/Courses/cs206/fall2013/slides/08_Sorting_GenericMethod.pdf
                     T temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
@@ -89,20 +88,5 @@ public class Ex6GenericMethods {
         }
         
     }
-    /*
-    void sort(int[] arr){
-
-        //{9, 3, 0, ...} 3<9 (switch places), 3!<0, ...
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[i] < arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-    }
-    */
 
 }

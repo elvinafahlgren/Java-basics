@@ -19,6 +19,8 @@ public class Ex7LCRSimulation {
 
     void program() {
         //test();        // < --- Uncomment to run tests ---
+        //Player current;         // Current player for round
+        boolean stop = false;
 
         // Hard coded data
         final Player[] players = {new Player("olle", 3),
@@ -28,12 +30,36 @@ public class Ex7LCRSimulation {
         displayPlayers(players);
 
         // TODO Runt the simulation
+        //current = getRandomPlayer(players);     // Set random player to start
+
+        while (!stop){
+
+            char[] result = new char[actual.chips];     // Char array length of amount of chips
+
+            if(actual.chips > 0) {
+                getResult(result);
+            }
+            displayState(actual, result, players);
+        }
 
     }
 
     // ---- Logical methods -----------------
 
     // TODO
+    Player getRandomPlayer(Player[] playerArr){
+        return playerArr[rand.nextInt(playerArr.length)];
+    }
+
+    char[] getResult(char[] result){
+        for(int i = 0, i < result.length; i++){
+
+        }
+    }
+
+    int rollDice(){
+        return rand.nextInt(6)+1;
+    }
 
     // --- IO methods ------------------
 
