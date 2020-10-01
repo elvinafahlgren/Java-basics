@@ -1,6 +1,8 @@
 package exercises;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 import static java.lang.System.out;
@@ -29,14 +31,14 @@ public class Ex6GenericMethods {
         String origSS = Arrays.toString(ss);
 
         // diffIndex works for all arrays reference types
-        //out.println(diffIndex(is, is) == -1);
-        //out.println(diffIndex(ss, ss) == -1);
+        out.println(diffIndex(is, is) == -1);
+        out.println(diffIndex(ss, ss) == -1);
 
         // shuffle should be a generic method, so we can use it for Integers ...
-        //shuffle(is);
+        shuffle(is);
         out.println(!Arrays.toString(is).equals(origIs));  // May be false, but unlikely
         // ... and here for String.
-        //shuffle(ss);
+        shuffle(ss);
         out.println(!Arrays.toString(ss).equals(origSS));
 
         // sort should also be generic (this is hard)
@@ -49,5 +51,58 @@ public class Ex6GenericMethods {
 
     // ------- Methods -------------------------
 
+    <T> int diffIndex(T[] arr0, T[] arr1){
+        int length = 0;
+        if (arr0.length < arr1.length)
+            length = arr0.length;
+        else
+            length = arr1.length;
+
+        for(int i = 0; i < length; i++){
+            if(arr0[i] != arr1[i])
+                return i;
+        }
+        return -1;
+    }
+
+    <T> void shuffle(T[] arr){
+        Random rand = new Random();
+        for (int i = 0; i < arr.length; i++) {
+            int randomIndexToSwap = rand.nextInt(arr.length);
+            T temp = arr[randomIndexToSwap];
+            arr[randomIndexToSwap] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    <T extends Comparable> void sort(T[] arr){
+        char ch[] = new char[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    T temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        
+    }
+    /*
+    void sort(int[] arr){
+
+        //{9, 3, 0, ...} 3<9 (switch places), 3!<0, ...
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+    */
 
 }
