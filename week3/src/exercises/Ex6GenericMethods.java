@@ -77,6 +77,20 @@ public class Ex6GenericMethods {
 
     <T extends Comparable<? super T>> void sort(T[] arr){
 
+
+        boolean sorted = false;
+        while(!sorted) {
+            sorted = true;
+            for (int j = 0; j < arr.length-1; j++) {
+                if (arr[j].compareTo(arr[j+1]) > 0 ){    // Sort generic method, see https://cs.brynmawr.edu/Courses/cs206/fall2013/slides/08_Sorting_GenericMethod.pdf
+                    sorted = false;
+                    T temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        /*
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
                 if (arr[i].compareTo(arr[j]) < 0) {         // Sort generic method, see https://cs.brynmawr.edu/Courses/cs206/fall2013/slides/08_Sorting_GenericMethod.pdf
@@ -86,7 +100,7 @@ public class Ex6GenericMethods {
                 }
             }
         }
-        
+        */
     }
 
 }

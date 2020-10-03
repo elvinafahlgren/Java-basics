@@ -37,7 +37,7 @@ public class Ex7LCRSimulation {
             char[] result = new char[actual.chips];     // Char array length of amount of chips
 
             if(actual.chips > 0) {
-                getResult(result);
+                //getResult(result);
             }
             displayState(actual, result, players);
         }
@@ -50,12 +50,14 @@ public class Ex7LCRSimulation {
     Player getRandomPlayer(Player[] playerArr){
         return playerArr[rand.nextInt(playerArr.length)];
     }
-
+    /*
     char[] getResult(char[] result){
         for(int i = 0, i < result.length; i++){
 
         }
     }
+    */
+
 
     int rollDice(){
         return rand.nextInt(6)+1;
