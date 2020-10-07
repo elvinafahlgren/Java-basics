@@ -3,6 +3,7 @@ package calc;
 import java.util.*;
 
 import static java.lang.Double.NaN;
+import static java.lang.Double.parseDouble;
 import static java.lang.Math.pow;
 
 
@@ -40,7 +41,21 @@ class Calculator {
     // ------  Evaluate RPN expression -------------------
 
     public double evalPostfix(List<String> postfix) {
-        return 0;  // TODO
+        Stack<Double> stack = new Stack<Double>();
+        for(String current : postfix){
+            if(OPERATORS.contains(current)){
+                if(stack.size() >= 2) {
+                    double res = applyOperator(current, stack.pop(), stack.pop());
+                    stack.push(res);
+                }
+                else
+                    throw new IllegalArgumentException(MISSING_OPERAND);
+
+            }
+            else
+                stack.push(parseDouble(current));
+        }
+        return stack.pop();
     }
 
 
@@ -66,7 +81,58 @@ class Calculator {
     // ------- Infix 2 Postfix ------------------------
 
     public List<String> infix2Postfix(List<String> tokens) {
-        return null; // TODO
+        List<String> postfix = new LinkedList<>();
+        Stack<String> stack = new Stack<String>();
+        for(int i = 0; i < tokens.size(); i++){
+            String current = tokens.get(i);
+
+            // Check if operand, add to postfix
+            if(current.matches("\\d+")) {
+                postfix.add(current);
+            }
+
+            // If "(", push it to the stack.
+            else if (current.equals("(")){
+                stack.push(current);
+            }
+
+            //  If ")", pop and output from the stack
+            // until an '(' is encountered.
+            else if (current.equals(")")) {
+                while (!stack.isEmpty() && !stack.peek().equals("(")) {
+                    postfix.add(stack.pop());
+                }
+
+                // Pop the "("
+                if (!stack.isEmpty() && stack.peek().equals("("))
+                    stack.pop();
+                else
+                    throw new IllegalArgumentException(MISSING_OPERATOR);
+
+            }
+
+            // If operator, add to stack
+            else{
+                if(!stack.isEmpty() && !stack.peek().equals("(")){
+                    while (!stack.isEmpty() && getPrecedence(current) <= getPrecedence(stack.peek())){
+                        //If ^ operator is compared to ^ operator, we need to wait untill there is a lower prioritized operator pushed to stack.
+                        if(current.equals(stack.peek()) && getAssociativity(current) == Assoc.RIGHT)
+                            break;
+                        else
+                            postfix.add(stack.pop());
+
+                    }
+                }
+                stack.push(current);
+            }
+
+        }
+        // Pop all operators from stack
+        while (!stack.isEmpty()){
+            postfix.add(stack.pop());
+        }
+
+        return postfix;
     }
 
 
@@ -100,8 +166,45 @@ class Calculator {
     // ---------- Tokenize -----------------------
 
     public List<String> tokenize(String expr) {
-        return null;   // TODO
+        List<String> tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));   //(?<=\d) means the previous character is a digit
+
+        findOperator(tokenized);
+
+        expr = expr.replaceAll("\\s+","");
+        tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));   //(?<=\d) means the previous character is a digit
+
+
+
+        //(?=\D) means the next character is a non-digit
+        //(?<=\d)(?=\D) together will match between a digit and a non-digit
+        //(?<=\D)(?=\D)
+        //regexA|regexB means either regexA or regexB is matched, which is
+        //...used as above points, but non-digit then digit for the visa-versa logic
+        return tokenized;
     }
 
-    // TODO Possibly more methods
+
+
+    void findOperator(List<String> tokenized ){
+        int oprand = 0;
+        int oprat = 0;
+
+        for(String token : tokenized){
+            if(OPERATORS.contains(token))
+                oprat++;
+            else if(token.matches("\\d+"))
+                oprand++;
+        }
+
+        // If there is not enough operators, throw illegal argument
+        if(oprand - 1 > oprat)
+            throw new IllegalArgumentException(MISSING_OPERATOR);
+
+        // If there is not enough operands, throw illegal argument
+        else if(oprand - 1 < oprat)
+            throw new IllegalArgumentException(MISSING_OPERAND);
+
+    }
+
+
 }
