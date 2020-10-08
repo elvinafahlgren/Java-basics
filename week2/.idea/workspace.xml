@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c02996f-ddb1-400c-b0d3-dafeb5c35703" name="Default Changelist" comment="" />
+    <list default="true" id="ccfeee1d-aa14-488f-9b43-8c277d039bcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/src/exercises/Ex1WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/src/exercises/Ex1WordCount.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

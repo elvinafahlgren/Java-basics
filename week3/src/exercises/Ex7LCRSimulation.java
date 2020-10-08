@@ -6,7 +6,7 @@ import java.util.Random;
 import static java.lang.System.exit;
 import static java.lang.System.out;
 
-/*
+/* //TODO INTE KLAR
  *  Simulation of LCR game. See, https://en.wikipedia.org/wiki/LCR_(dice_game)
  */
 public class Ex7LCRSimulation {

@@ -1,8 +1,6 @@
 package exercises;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Scanner;
+import java.util.*;
 
 import static java.lang.System.in;
 import static java.lang.System.out;
@@ -39,7 +37,11 @@ public class Ex4CheckParen {
     }
 
     // ----------- Methods -------------------------
-
+    boolean checkParentheses(String str){
+        List<String> list = new LinkedList<>(Arrays.asList(str));
+        out.println(list);
+        return true;
+    }
 
 
     // This is interesting because have to return, but what if no match?!?

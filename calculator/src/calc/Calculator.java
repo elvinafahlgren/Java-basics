@@ -166,15 +166,13 @@ class Calculator {
     // ---------- Tokenize -----------------------
 
     public List<String> tokenize(String expr) {
-        List<String> tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));   //(?<=\d) means the previous character is a digit
-
+        List<String> tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));
         findOperator(tokenized);
 
         expr = expr.replaceAll("\\s+","");
-        tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));   //(?<=\d) means the previous character is a digit
+        tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));
 
-
-
+        //(?<=\d) means the previous character is a digit
         //(?=\D) means the next character is a non-digit
         //(?<=\d)(?=\D) together will match between a digit and a non-digit
         //(?<=\D)(?=\D)
