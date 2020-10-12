@@ -33,7 +33,7 @@ The application is divided over a few directories
 
 The Object model
 ------------
-- The model has no look, it's just data and logic.
+-             The model has no look, it's just data and logic.
 - The overall game is represented by the Pong class.
 - Pong class handles the game logic (possibly asking others to help)
 - Pong class uses two Paddle objects and a Ball object.

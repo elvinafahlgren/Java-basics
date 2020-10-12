@@ -48,12 +48,12 @@ public class Ex3ReadNumber {
         out.println(numbers.contains("12345"));
         numbers.clear();
 
-        //out.println(readNumber(numbers, "abc123abc", 3) == 6);
+        out.println(readNumber(numbers, "abc123abc", 3) == 6);
         out.println(numbers.contains("123"));
 
         // Empty string is not accepted will throw exception
         try {
-           // out.println(readNumber(numbers, "", 0) == 0);
+            out.println(readNumber(numbers, "", 0) == 0);
         } catch (IllegalArgumentException e) {
             out.println(e.getMessage());   // Should print "Expr length is 0" or similar
         }
@@ -62,28 +62,28 @@ public class Ex3ReadNumber {
     // ----------- Methods-----------------------------------
 
     int readNumber(List<String> numbers, String str, int startIndex){
+
+        // We want to throw illegal argument is string is empty
+        if (str == null || str.isEmpty())
+            throw new IllegalArgumentException("Expr length is 0");
+
+        // Create new StringBuilder så we can build a new string
         StringBuilder word = new StringBuilder("");
+        // Int that will count the last digits position
         int pos = 0;
+
+        // Loop through string
         for(int i = 0; i < str.length(); i++){
+            // If a letter is a digit, +1 to pos and put it in the StringBuilder word
             if(Character.isDigit(str.charAt(i))){
                 pos++;
                 word.append(str.charAt(i));
             }
         }
+        // Add the created word to our list
         numbers.add(String.valueOf(word));
-        return pos;
-        /*
-          stringbuilder word
-        * for i in str from startindex to end:
-        *   is str[i] digit?
-        *       yes:
-        *          pos = i
-        *           word.append(str[i])
-            numbers.add(String.valueOf(word))
-        *   return i + 1
-        * */
-        //numbers = Arrays.asList(str);
-        //out.println(numbers);
+        // Return total position
+        return startIndex + pos;
     }
 
 }

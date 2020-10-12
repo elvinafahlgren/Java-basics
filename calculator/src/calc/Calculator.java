@@ -1,3 +1,4 @@
+
 package calc;
 
 import java.util.*;
@@ -5,6 +6,8 @@ import java.util.*;
 import static java.lang.Double.NaN;
 import static java.lang.Double.parseDouble;
 import static java.lang.Math.pow;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /*
@@ -16,6 +19,8 @@ import static java.lang.Math.pow;
  *   NOTE:
  *   - No negative numbers implemented
  */
+
+
 class Calculator {
 
     // Here are the only allowed instance variables!
@@ -42,21 +47,33 @@ class Calculator {
 
     public double evalPostfix(List<String> postfix) {
         Stack<Double> stack = new Stack<Double>();
+
         for(String current : postfix){
+            // If current is an operator
             if(OPERATORS.contains(current)){
+                // Perform a mathematical operation if there is two or more elements in stack
                 if(stack.size() >= 2) {
                     double res = applyOperator(current, stack.pop(), stack.pop());
+                    // Push result to stack
                     stack.push(res);
                 }
+                // Else, there isn't enough operands, throw exception
                 else
                     throw new IllegalArgumentException(MISSING_OPERAND);
 
             }
+            // Else (current is operand), push to stack
             else
                 stack.push(parseDouble(current));
         }
+        // If there are more than one operand left in stack, there isn't enough operators
+        if(stack.size() > 1){
+            throw new IllegalArgumentException(MISSING_OPERATOR);
+        }
         return stack.pop();
     }
+
+
 
 
     double applyOperator(String op, double d1, double d2) {
@@ -83,56 +100,60 @@ class Calculator {
     public List<String> infix2Postfix(List<String> tokens) {
         List<String> postfix = new LinkedList<>();
         Stack<String> stack = new Stack<String>();
-        for(int i = 0; i < tokens.size(); i++){
-            String current = tokens.get(i);
+        for(int i = 0; i < tokens.size(); i++)
+            checkToken(tokens.get(i), stack, postfix);
 
-            // Check if operand, add to postfix
-            if(current.matches("\\d+")) {
-                postfix.add(current);
-            }
-
-            // If "(", push it to the stack.
-            else if (current.equals("(")){
-                stack.push(current);
-            }
-
-            //  If ")", pop and output from the stack
-            // until an '(' is encountered.
-            else if (current.equals(")")) {
-                while (!stack.isEmpty() && !stack.peek().equals("(")) {
-                    postfix.add(stack.pop());
-                }
-
-                // Pop the "("
-                if (!stack.isEmpty() && stack.peek().equals("("))
-                    stack.pop();
-                else
-                    throw new IllegalArgumentException(MISSING_OPERATOR);
-
-            }
-
-            // If operator, add to stack
-            else{
-                if(!stack.isEmpty() && !stack.peek().equals("(")){
-                    while (!stack.isEmpty() && getPrecedence(current) <= getPrecedence(stack.peek())){
-                        //If ^ operator is compared to ^ operator, we need to wait untill there is a lower prioritized operator pushed to stack.
-                        if(current.equals(stack.peek()) && getAssociativity(current) == Assoc.RIGHT)
-                            break;
-                        else
-                            postfix.add(stack.pop());
-
-                    }
-                }
-                stack.push(current);
-            }
-
-        }
         // Pop all operators from stack
         while (!stack.isEmpty()){
             postfix.add(stack.pop());
         }
 
         return postfix;
+    }
+
+    void checkToken(String current, Stack<String> stack, List<String> postfix){
+        // If operand, add to postfix
+        if(current.matches("\\d+"))
+            postfix.add(current);
+
+        // If "(", push it to the stack.
+        else if (current.equals("("))
+            stack.push(current);
+
+        //  If ")", pop and output from the stack
+        // until an '(' is encountered.
+        else if (current.equals(")")) {
+            // While stack isn't empty and first element in stack isn't "(", add to postfix.
+            while (!stack.isEmpty() && !stack.peek().equals("("))
+                postfix.add(stack.pop());
+
+            // If first element in stack is "(", pop it
+            if (!stack.isEmpty() && stack.peek().equals("("))
+                stack.pop();
+
+            // Missing "(", throw exception
+            else
+                throw new IllegalArgumentException(MISSING_OPERATOR);
+
+        }
+
+        // If operator, add to stack
+        else{
+            // If stack isn't empty and first element in stack isn't "("
+            if(!stack.isEmpty() && !stack.peek().equals(")")){
+                // While precedence of current operator is less than or equal to the precedence of first operator in stack
+                while (!stack.isEmpty() && getPrecedence(current) <= getPrecedence(stack.peek())){
+                    //If ^ operator is compared to ^ operator, we need to wait until there is a lower prioritized operator pushed to stack.
+                    if(current.equals(stack.peek()) && getAssociativity(current) == Assoc.RIGHT)
+                        break;
+                    else
+                        postfix.add(stack.pop());
+
+                }
+            }
+
+            stack.push(current);
+        }
     }
 
 
@@ -166,43 +187,22 @@ class Calculator {
     // ---------- Tokenize -----------------------
 
     public List<String> tokenize(String expr) {
-        List<String> tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));
-        findOperator(tokenized);
+        List<String> tokenized = new ArrayList<String>();
 
-        expr = expr.replaceAll("\\s+","");
-        tokenized = Arrays.asList(expr.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)|(?<=\\D)(?=\\D)"));
+        // Matcher = class that performs operations on a string depending on a pattern
+        // Pattern = a compiled (final) regular expression
+        // Create a matcher (m) that contains a pattern and a target(expr) to perform operations with.
+        // (\d+) = match a group of digits. NOTE: "+" in this case indicates that we want to match any amount of digits in a row
+        // (\+|\*|\-|\/|\^|\(|\)) = match a group of +, *, -, /, ^, ( and )
+        Matcher m = Pattern.compile("(\\d+)|(\\+|\\*|\\-|\\/|\\^|\\(|\\))").matcher(expr);
+        // While the matcher can find new groups matching the regex expression to our string(expr) we add them to our list.
+        while (m.find())
+            tokenized.add(m.group());
 
-        //(?<=\d) means the previous character is a digit
-        //(?=\D) means the next character is a non-digit
-        //(?<=\d)(?=\D) together will match between a digit and a non-digit
-        //(?<=\D)(?=\D)
-        //regexA|regexB means either regexA or regexB is matched, which is
-        //...used as above points, but non-digit then digit for the visa-versa logic
         return tokenized;
     }
 
 
-
-    void findOperator(List<String> tokenized ){
-        int oprand = 0;
-        int oprat = 0;
-
-        for(String token : tokenized){
-            if(OPERATORS.contains(token))
-                oprat++;
-            else if(token.matches("\\d+"))
-                oprand++;
-        }
-
-        // If there is not enough operators, throw illegal argument
-        if(oprand - 1 > oprat)
-            throw new IllegalArgumentException(MISSING_OPERATOR);
-
-        // If there is not enough operands, throw illegal argument
-        else if(oprand - 1 < oprat)
-            throw new IllegalArgumentException(MISSING_OPERAND);
-
-    }
-
-
 }
+
+
