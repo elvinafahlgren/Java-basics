@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad7b89c7-681d-40d8-91c2-4962fba5599c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../calculator/src/calc/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator/src/calc/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/assignment4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/assignment4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/src/assignment4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/assignment4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week4/src/exercises/Ex3ReadNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/src/exercises/Ex3ReadNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week4/src/exercises/Ex4CheckParen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/src/exercises/Ex4CheckParen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week4/src/exercises/Ex5StringOrdering.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/src/exercises/Ex5StringOrdering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week4/src/exercises/Ex6SJT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/src/exercises/Ex6SJT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/ex1useaclass/Ex1TestRational.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex1useaclass/Ex1TestRational.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/ex1useaclass/Rational.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex1useaclass/Rational.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Ex2TestPointTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Ex2TestPointTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calculator" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -69,7 +62,7 @@
       <recent name="$PROJECT_DIR$/src/xlect" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ex1TestRational">
+  <component name="RunManager" selected="Application.Ex2TestPointTriangle">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -83,6 +76,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercises.ex1useaclass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex2TestPointTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.ex2usemoreclasses.Ex2TestPointTriangle" />
+      <module name="week5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.ex2usemoreclasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,20 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhyStatic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="samples.usestatic.WhyStatic" />
-      <module name="week5" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="samples.usestatic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -178,19 +171,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Ex1TestRational" />
+      <item itemvalue="Application.Ex2TestPointTriangle" />
       <item itemvalue="Application.Exceptions" />
       <item itemvalue="Application.TheMainMethod" />
       <item itemvalue="Application.UseAMap" />
-      <item itemvalue="Application.WhyStatic" />
-      <item itemvalue="Application.Ex1TestRational" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ex2TestPointTriangle" />
         <item itemvalue="Application.Ex1TestRational" />
         <item itemvalue="Application.UseAMap" />
         <item itemvalue="Application.TheMainMethod" />
         <item itemvalue="Application.Exceptions" />
-        <item itemvalue="Application.WhyStatic" />
       </list>
     </recent_temporary>
   </component>
@@ -209,31 +202,41 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1155" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1602494354917">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="765" y="236" width="374" height="556" key="#com.intellij.ide.util.MemberChooser" timestamp="1602580303110">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602494354917" />
-    <state width="1877" height="353" key="GridCell.Tab.0.bottom" timestamp="1602528199913">
+    <state x="765" y="236" width="374" height="556" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602580303110" />
+    <state x="743" y="277" width="424" height="478" key="FileChooserDialogImpl" timestamp="1602586949154">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="277" width="424" height="478" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602586949154" />
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1602588633243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602528199913" />
-    <state width="1877" height="353" key="GridCell.Tab.0.center" timestamp="1602528199912">
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602588633243" />
+    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1602588633241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="353" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602528199912" />
-    <state width="1877" height="353" key="GridCell.Tab.0.left" timestamp="1602528199912">
+    <state width="1878" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602588633241" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1602588633240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="353" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602528199912" />
-    <state width="1877" height="353" key="GridCell.Tab.0.right" timestamp="1602528199913">
+    <state width="1878" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602588633240" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1602588633242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="353" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602528199913" />
-    <state x="755" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1602498643374">
+    <state width="1878" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602588633242" />
+    <state x="755" y="267" width="428" height="493" key="refactoring.ChangeSignatureDialog" timestamp="1602580305254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1165" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602494359679" />
     <state x="755" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602498643374" />
+    <state x="755" y="267" width="428" height="493" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602580305254" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
