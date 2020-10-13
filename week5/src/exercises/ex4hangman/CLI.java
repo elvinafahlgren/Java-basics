@@ -22,6 +22,7 @@ public class CLI {
     public static final String DEFAULT_PATH = "src/exercises/ex4hangman/words.txt";
     private final String NL = System.lineSeparator();  // System independent new Line
     private final Scanner sc = new Scanner(in);
+    boolean stop = false;
 
     private HangMan hangMan;  // Global reference to OO - model
 
@@ -36,10 +37,17 @@ public class CLI {
 
         // Build OO model
         // TODO
+        //HangMan hangMan = new HangMan(new Man());
 
-        welcomeMsg(0);   // TODO
+        welcomeMsg(theWord.length());   // TODO
 
         // TODO The game loop
+        while(!stop){
+            char guess = guessCharacter();
+
+            stop = true;
+        }
+
 
         // Game ended
         winMsg(hangMan.getResult(), hangMan.getNGuess(), "xxxx");  // TODO

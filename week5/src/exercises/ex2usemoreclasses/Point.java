@@ -12,7 +12,7 @@ import static java.lang.Math.sqrt;
   To test run Ex2TestPointTriangle
 
 */
-public class Point {
+public final class Point {
     // TODO
     private final int a;
     private final int b;

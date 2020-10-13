@@ -48,7 +48,7 @@ public class Triangle {
     @Override
     public boolean equals(Object o){
         Triangle t = (Triangle) o;
-        if(t.getP1() == this.p1 && t.getP2() == this.p1 && t.getP3() == this.p3)
+        if(t.getP1() == this.p1 && t.getP2() == this.p2 && t.getP3() == this.p3)
             return true;
         return false;
     }

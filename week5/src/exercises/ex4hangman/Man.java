@@ -6,5 +6,8 @@ package exercises.ex4hangman;
 public class Man {
 
     // TODO
+    public Man(){
+
+    }
 
 }
