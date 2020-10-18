@@ -16,5 +16,4 @@ public interface IPositionable {
     double getWidth();
 
     double getHeight();
-
 }

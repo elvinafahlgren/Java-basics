@@ -19,13 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad7b89c7-681d-40d8-91c2-4962fba5599c" name="Default" comment="">
+    <list default="true" id="ad7b89c7-681d-40d8-91c2-4962fba5599c" name="Default" comment="week5__">
+      <change afterPath="$PROJECT_DIR$/../pong/src/pong/model/Moveable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Ball.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Ball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Paddle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Paddle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Pong.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Pong.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/IPositionable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/IPositionable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/Pong.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/Pong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong/src/pong/view/PongGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/view/PongGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects$Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects$Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex2usemoreclasses/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/ex3theory/Ex3Theory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex3theory/Ex3Theory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/ex4hangman/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex4hangman/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/ex4hangman/Man.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/ex4hangman/Man.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/.idea/week6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/.idea/week6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/TestCarVan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/TestCarVan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Van.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Van.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Asteroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Asteroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Spaceship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Spaceship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +82,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pong_klar" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -191,11 +209,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UseAMap" />
+      <item itemvalue="Application.CLI" />
       <item itemvalue="Application.Ex1TestRational" />
       <item itemvalue="Application.Ex2TestPointTriangle" />
-      <item itemvalue="Application.CLI" />
       <item itemvalue="Application.Ex3Theory" />
+      <item itemvalue="Application.UseAMap" />
     </list>
     <recent_temporary>
       <list>
@@ -219,32 +237,61 @@
       <option name="presentableId" value="Default" />
       <updated>1523945897031</updated>
     </task>
+    <task id="LOCAL−00001" summary="week5__">
+      <created>1602621646022</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1602621646023</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="week5__" />
+    <option name="LAST_COMMIT_MESSAGE" value="week5__" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1155" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1602494354917">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602494354917" />
-    <state width="1877" height="353" key="GridCell.Tab.0.bottom" timestamp="1602621130936">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603050169492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621130936" />
-    <state width="1877" height="353" key="GridCell.Tab.0.center" timestamp="1602621130935">
+    <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602694346555" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603050169492" />
+    <state width="1877" height="353" key="GridCell.Tab.0.bottom" timestamp="1602621674932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621130935" />
-    <state width="1877" height="353" key="GridCell.Tab.0.left" timestamp="1602621130935">
+    <state width="1877" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621674932" />
+    <state width="1877" height="353" key="GridCell.Tab.0.center" timestamp="1602621674931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621130935" />
-    <state width="1877" height="353" key="GridCell.Tab.0.right" timestamp="1602621130936">
+    <state width="1877" height="353" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621674931" />
+    <state width="1877" height="353" key="GridCell.Tab.0.left" timestamp="1602621674931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621130936" />
+    <state width="1877" height="353" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621674931" />
+    <state width="1877" height="353" key="GridCell.Tab.0.right" timestamp="1602621674932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="353" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621674932" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602621653212">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602621653212" />
     <state x="755" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1602498643374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

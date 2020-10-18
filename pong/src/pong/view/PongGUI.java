@@ -50,16 +50,16 @@ public class PongGUI extends Application implements IEventHandler {
         KeyCode kc = event.getCode();
         switch (kc) {
             case UP:
-                // TODO
+                pong.setSpeedRightPaddle(-PADDLE_SPEED);
                 break;
             case DOWN:
-                // TODO
+                pong.setSpeedRightPaddle(PADDLE_SPEED);
                 break;
             case Q:
-                // TODO
+                pong.setSpeedLeftPaddle(-PADDLE_SPEED);
                 break;
             case A:
-                // TODO
+                pong.setSpeedLeftPaddle(PADDLE_SPEED);
                 break;
             default:  // Nothing
         }
@@ -74,10 +74,12 @@ public class PongGUI extends Application implements IEventHandler {
             case UP:
             case DOWN:
                 // TODO
+                pong.setSpeedRightPaddle(0);
                 break;
             case A:
             case Q:
                 // TODO
+                pong.setSpeedLeftPaddle(0);
                 break;
             default: // Nothing
         }
@@ -109,10 +111,20 @@ public class PongGUI extends Application implements IEventHandler {
         renderBackground();
 
         // Build the model
-        Paddle rightPaddle = null;
-        Paddle leftPaddle = null;
+        Paddle rightPaddle = new Paddle(550, GAME_HEIGHT / 2);
+        Paddle leftPaddle = new Paddle(50, GAME_HEIGHT / 2);
+        Ball ball = new Ball();
 
         // TODO Create objects and connect to a full object model
+        out.println("NEW GAME");
+        pong = new Pong(rightPaddle, leftPaddle, ball);
+
+
+        /*
+
+        Initiera spelobjekten (paddlar och boll)
+        Initiera pong och skicka int spelobjekten
+         */
 
 
         // Map objects to sprites
