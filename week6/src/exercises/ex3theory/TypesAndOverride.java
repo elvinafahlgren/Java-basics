@@ -26,23 +26,21 @@ public class TypesAndOverride {
 
     void program() {
         // a
-        /*
-        D d = new D();      // Create an object D using new D()
-        C c = d;            // Create object C that is an object D
-        c.doIt();           // Because c is an object D, it will do what is said in class D
+        /*D d = new D();
+        C c = d;
+        c.doIt();
         */
 
         // b
-        /*
-        IY iy = new D();    // TODO WILLIAM
-        C c1 = (C) iy;      //
+        /*IY iy = new D();
+        C c1 = (C) iy;
         c1.doOther();
         */
 
         // c
-        A a = new B();
+        /*A a = new B();
         a.doIt(1);
-
+        */
 
         // d
         /*IX ix = new B();
