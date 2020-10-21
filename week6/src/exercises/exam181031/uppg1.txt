@@ -1,0 +1,38 @@
+a) Konstruktor = En den av en program kod som alltid körs när man skapar ett objekt.
+t.ex.
+public class Boll(){
+
+    // Konstruktor:
+    public Boll(){
+        ...
+    }
+}
+
+b) Instansvariabel är variabler som tillhör objekt. De finns så länge objektet existerar.
+Lokala variabler är variabler som finns på stacken. Stacken växer vid metodanrop och nya variabler skapas.
+När metoden är klar återlämnas minnet och variablerna försvinner. D.v.s. lokala variabler har en livslängd.
+
+
+Skiss där s och i i Stack-minnet är lokala variabler och i och n i Heap-Minnet är instansvariabler (i objekt)
+
+
+                       PRIMÄRMINNE
+______________________________________________________________________________
+|                          |                                                 |
+|      _____               |        ________________                         |
+|      |   |               |        |   _____      |                         |
+|      -----               |        |   |   |      |                         |
+|        s                 |        |   -----      |                         |
+|                          |        |     i        |                         |
+|                          |        |              |                         |
+|                          |        ----------------                         |
+|                          |                                                 |
+|         _____            |                 ________________                |
+|         |   |            |                 |     _____    |                |
+|         -----            |                 |     |   |    |                |
+|           i              |                 |     -----    |                |
+|                          |                 |       n      |                |
+|                          |                 |              |                |
+|                          |                 ----------------                |
+------------------------------------------------------------------------------
+        STACK-MINNE                     HEAP-MINNE

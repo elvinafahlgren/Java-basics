@@ -1,0 +1,1 @@
+i <= j && k <= i && j <= k kommer aldrig vara sann då k alltid är större än i. Det blir en oändlig loop.

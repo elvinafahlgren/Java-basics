@@ -122,6 +122,7 @@ public class Pong {
     public void setSpeedRightPaddle(double dy) {
         rightPaddleSpeed = dy;
     }
+
     public void setSpeedLeftPaddle(double dy) {
         leftPaddleSpeed = dy;
     }
