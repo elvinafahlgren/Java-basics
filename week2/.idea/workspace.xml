@@ -19,35 +19,106 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccfeee1d-aa14-488f-9b43-8c277d039bcd" name="Default Changelist" comment="">
+    <list default="true" id="874ed4f3-2220-4ab2-8807-85440845ae8f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/week2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/week2/exercises/exercises2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/Ex1ReadPlayers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/Ex2ArrayMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/Ex3MatrixMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/Ex4Theory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/Ex6ThreeSumToZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exercises2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/samples/ArrayMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/samples/BasicJavaFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/samples/MathMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/samples/Matrices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/samples/ObjectArrMeth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/samples/UseAConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/samples/UseEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam181031/uppg7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam190107/uppg2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam190107/uppg3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam190107/uppg4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam190107/uppg5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam200107/uppg2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam200107/uppg3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam200107/uppg4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week6/src/exercises/exam200819/uppg5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week4/src/exercises/Ex1WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/src/exercises/Ex1WordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex1ReadPlayers$Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex1ReadPlayers$Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex1ReadPlayers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex1ReadPlayers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex2ArrayMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex2ArrayMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex3MatrixMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex3MatrixMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex4Theory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex4Theory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex5GameOfLife$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex5GameOfLife$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex5GameOfLife$Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex5GameOfLife$Cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex5GameOfLife.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex5GameOfLife.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week2/exercises/Ex6ThreeSumToZero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week2/exercises/Ex6ThreeSumToZero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/Ex5GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/Ex5GameOfLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/exam181031/uppg5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/exam181031/uppg5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1hEvsalp2rfcy0LJBgMK0ZPtLiz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1jCLdjJc19Z6CTmYc5wMk2IJrEB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../neighbours" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week6" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Application.Ex5GameOfLife">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="xlect.alg" />
+      <recent name="xlect.references" />
+      <recent name="xlect.programs" />
+      <recent name="xlect.enums" />
+      <recent name="xlect.funcdecomp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Ex1ReadPlayers">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasicJavaFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="samples.BasicJavaFX" />
       <module name="week2" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path $USER_HOME$/devel/java/javafx-sdk-12.0.2/lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="samples.*" />
@@ -58,10 +129,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ex2ArrayMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.Ex2ArrayMethods" />
+    <configuration name="Ex1ReadPlayers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.Ex1ReadPlayers" />
       <module name="week2" />
-      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/../javafx-sdk-11.0.2/lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media" />
+      <option name="VM_PARAMETERS" value="--module-path D:\java-devel\javafx-sdk-11.0.2\lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercises.*" />
@@ -72,40 +143,122 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ex5GameOfLife" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.Ex5GameOfLife" />
+    <configuration name="Ex2ArrayMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.Ex2ArrayMethods" />
       <module name="week2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercises.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex3MatrixMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.Ex3MatrixMethods" />
+      <module name="week2" />
+      <option name="VM_PARAMETERS" value="--module-path D:\java-devel\javafx-sdk-11.0.2\lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex5GameOfLife" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.Ex5GameOfLife" />
+      <module name="week2" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path $USER_HOME$/devel/java/javafx-sdk-12.0.2/lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseEnum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="samples.UseEnum" />
+      <module name="week2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="samples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Ex2ArrayMethods" />
       <item itemvalue="Application.BasicJavaFX" />
+      <item itemvalue="Application.Ex1ReadPlayers" />
+      <item itemvalue="Application.Ex2ArrayMethods" />
+      <item itemvalue="Application.Ex3MatrixMethods" />
       <item itemvalue="Application.Ex5GameOfLife" />
+      <item itemvalue="Application.UseEnum" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ex5GameOfLife" />
-        <item itemvalue="Application.BasicJavaFX" />
+        <item itemvalue="Application.Ex1ReadPlayers" />
+        <item itemvalue="Application.Ex3MatrixMethods" />
         <item itemvalue="Application.Ex2ArrayMethods" />
+        <item itemvalue="Application.BasicJavaFX" />
+        <item itemvalue="Application.UseEnum" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c02996f-ddb1-400c-b0d3-dafeb5c35703" name="Default Changelist" comment="" />
-      <created>1599589273483</created>
+      <changelist id="874ed4f3-2220-4ab2-8807-85440845ae8f" name="Default" comment="" />
+      <created>1519123976091</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599589273483</updated>
+      <updated>1519123976091</updated>
     </task>
     <servers />
   </component>
@@ -122,45 +275,52 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599728232286">
+    <state x="-1441" y="145" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603303865117">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603303287842" />
+    <state x="-1441" y="145" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603303865117" />
+    <state x="-1230" y="274" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1603303297116">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="274" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603303297116" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603351312772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599728232286" />
-    <state x="1218" y="417" width="445" height="207" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1600352778889">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603351312772" />
+    <state width="1877" height="205" key="GridCell.Tab.0.bottom" timestamp="1603310917119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1218" y="417" width="445" height="207" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1600352778889" />
-    <state x="631" y="260" width="637" height="505" key="FileChooserDialogImpl" timestamp="1600330556118">
+    <state width="1877" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310917119" />
+    <state width="1877" height="205" key="GridCell.Tab.0.center" timestamp="1603310917119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="260" width="637" height="505" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600330556118" />
-    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1600355087779">
+    <state width="1877" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310917119" />
+    <state width="1877" height="205" key="GridCell.Tab.0.left" timestamp="1603310917119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600355087779" />
-    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1600355087777">
+    <state width="1877" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310917119" />
+    <state width="1877" height="205" key="GridCell.Tab.0.right" timestamp="1603310917119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600355087777" />
-    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1600355087776">
+    <state width="1877" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310917119" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1603303807561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600355087776" />
-    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1600355087777">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600355087777" />
-    <state x="187" y="88" width="1536" height="856" key="MergeDialog" timestamp="1600254715501">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="187" y="88" width="1536" height="856" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600254715501" />
-    <state x="443" y="96" width="1024" height="839" key="SettingsEditor" timestamp="1599728161421">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="443" y="96" width="1024" height="839" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599728161421" />
-    <state x="768" y="436" width="373" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600254698368">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="768" y="436" width="373" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600254698368" />
+    <state x="-1480" y="94" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603303299901" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603303807561" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/xlect/matrix/Matrix2Array.java</url>
+          <line>45</line>
+          <properties class="xlect.matrix.Matrix2Array">
+            <option name="EMULATED" value="true" />
+          </properties>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

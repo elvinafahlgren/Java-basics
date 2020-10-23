@@ -15,15 +15,22 @@ public class uppg5 {
 
     private void program() {
         String s = "me";
-        out.println(stringToSubstring(s));
+        out.println(specialSubstrings(s));
     }
 
     List<String> specialSubstrings(String s){
-        List<String> specSub = stringToSubstring(s);
-
-        return null;
+        List<String> subs = stringToSubstring(s);
+        List<String> specSub = new ArrayList<>();
+        for(String str : subs){
+            char first = str.charAt(0);
+            char last = str.charAt(str.length() - 1);
+            if(isVowel(first) && !isVowel(last) || !isVowel(first) && isVowel(last))
+                specSub.add(str);
+        }
+        return specSub;
     }
 
+    // Do a List of all substrings of the word
     List<String> stringToSubstring(String s){
         List<String> subs = new ArrayList<>();
         for(int i = 0; i < s.length(); i++){
@@ -34,7 +41,7 @@ public class uppg5 {
         return subs;
     }
 
-    boolean isSpecial(){
-        return false;
+    boolean isVowel(char c){
+        return "aeiouy".indexOf(c) >= 0;
     }
 }

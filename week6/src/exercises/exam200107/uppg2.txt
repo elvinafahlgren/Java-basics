@@ -1,0 +1,17 @@
+2.  Koden nedan har ett kompileringsfel.  Vilket?2p
+
+    int i = 0;
+    for (int j = 1; j<10000; j++){
+        if (j % 2 == 0 && j % 3 == 0 && j % 5 == 0){
+            i++;
+            if( i>3){
+            break;
+            }
+        }
+    }
+
+    out.println("Found: " +  j + " " + i);
+
+ OBS kommer inte på hemtena för för det enkelt att se på IntelliJ
+
+ SVAR: J är inte synligt utanför for-loopen, därför får vi kompileringsfel.

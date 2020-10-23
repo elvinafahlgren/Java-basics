@@ -1,0 +1,14 @@
+
+    void program(){
+        MyClass m = new MyClass();
+        m.check(7);
+    }
+    class MyClass {
+        static Integer i;
+        boolean check(int threshold) {
+        return i <= threshold;
+        }
+    }
+
+2. När vi skriver "static Interger i;" sätter vi aldrig i. i blir null eftersom en Integer sätts till null som default.
+När vi undersöker om i <= threshold får vi nullPointerExeption
