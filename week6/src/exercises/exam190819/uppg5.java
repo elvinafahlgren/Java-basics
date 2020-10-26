@@ -2,11 +2,11 @@ package exercises.exam190819;
 
 import static java.lang.System.out;
 
-public class upg5 {
+public class uppg5 {
 
 
     public static void main(String[] args) {
-        new exercises.exam190819.upg5().program();
+        new uppg5().program();
     }
 
     private void program() {
@@ -29,7 +29,7 @@ public class upg5 {
         }
         // out.println(smallest);
 
-        return  smallest;
+        return smallest;
     }
 
     String[] getRotations(String word){

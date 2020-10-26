@@ -1,0 +1,6 @@
+1.
+a) Genom att skriva super(...) avses den direkta superklassens konstruktor.
+Måste ligga längst upp i sub-klassens konstruktor.
+
+b)Används för att deklarera en statisk klassvariabel. Med static kan vi nå klassvariabeln utan att instansiera ett
+klassobjekt.

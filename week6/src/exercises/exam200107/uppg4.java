@@ -1,10 +1,10 @@
 package exercises.exam200107;
 
-import java.util.Arrays;
+import static java.lang.System.out;
 
 public class uppg4 {
     public static void main(String[] args) {
-        new exercises.exam200107.uppg4().program();
+        new uppg4().program();
     }
 
     private void program() {
@@ -19,10 +19,10 @@ public class uppg4 {
                 {1, 3, 3}
         };
 
-        hasSubmatrixWith(a0, m);    //true
-        hasSubmatrixWith(a1, m);    //true
-        hasSubmatrixWith(a2, m);    //false
-        hasSubmatrixWith(a3, m);    //true
+        out.println(hasSubmatrixWith(a0, m));    //true
+        out.println(hasSubmatrixWith(a1, m));    //true
+        out.println(hasSubmatrixWith(a2, m));    //false
+        out.println(hasSubmatrixWith(a3, m));    //true
     }
 
     boolean hasSubmatrixWith(int[] arr, int[][] matrix){
@@ -30,66 +30,47 @@ public class uppg4 {
 
         for(int row = 0; row <= matrix.length - size; row++){
             for(int col = 0; col <= matrix[row].length - size; col++){
-                /*
-                if(matrixContainsValues(matrix, row, col, size, arr))
+                int[] subArray = getSubMatrixToArray(matrix, row, col, size);
+                if(match(subArray, arr))
                     return true;
-                 */
-                int[][] subMatrix = getSubMatrix(matrix, row, col, size);
-                int[] subArray = subToArray(subMatrix);
-                //System.out.println(Arrays.toString(subArray));
-                boolean match = compareArrays(subArray, arr);
-                if(match)
-                    return true;
-
             }
         }
         return false;
     }
 
-    boolean compareArrays(int[] array, int[] values){
-        if(array.length != values.length)
+    boolean match(int[] subArr, int[] arr){
+        if(subArr.length != arr.length)
             return false;
 
         int foundValues = 0;
-        boolean[] alreadyUsed = new boolean[array.length];
+        boolean[] alreadyUsed = new boolean[subArr.length];
 
-        for(int row =  0; row  < array.length; row++){
-            for(int i = 0; i < values.length; i++){
-                if(array[row] == values[i] && !alreadyUsed[i]){
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < subArr.length; j++){
+                if(arr[i] == subArr[j] && !alreadyUsed[j]){
                     foundValues++;
-                    alreadyUsed[i] = true;
-                    break;
+                    alreadyUsed[j] = true;
                 }
             }
         }
-        return false; // TODO ????????????????????????????????;KOLLA sista för. ca 20 min andra del
+        if(foundValues == arr.length)
+            return true;
+
+        return false;
     }
 
-    int[] subToArray(int[][] matrix){
-        int[] subArray = new int[matrix.length * matrix[0].length];
-        int subArrayIndex = 0;
 
-        for(int row = 0; row < matrix.length; row++){
-            for(int col = 0; col < matrix.length; col++){
+    int[] getSubMatrixToArray(int[][] matrix, int r, int c, int size){
+        int[] subArray = new int[size * size];
+        int k = 0;
 
-                subArray[subArrayIndex] = matrix[row][col];
-                subArrayIndex++;
+        for(int row = r; row < r + size; row++){
+            for(int col = c; col < c + size; col++){
+                subArray[k] = matrix[row][col];
+                k++;
             }
         }
         return subArray;
-    }
-
-    int[][] getSubMatrix(int[][] matrix, int r, int c, int size){
-        int[][] subMatrix = new int[size][size];
-
-        for(int row = r; row < r + size; row++){
-            for(int col = c; col < c + size; row++){
-                subMatrix[row - 1][col - 1] = matrix[row][col];
-            }
-        }
-        return subMatrix;
 
     }
-
-
 }

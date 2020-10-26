@@ -20,30 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad7b89c7-681d-40d8-91c2-4962fba5599c" name="Default" comment="week5__">
-      <change afterPath="$PROJECT_DIR$/../pong/src/pong/model/Moveable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Ball.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Ball.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Paddle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Paddle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Pong.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/model/Pong.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/out/production/pong/pong/view/PongGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/IPositionable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/IPositionable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/Paddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/src/pong/model/Pong.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/model/Pong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong/src/pong/view/PongGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pong/src/pong/view/PongGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects$Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects$Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week1/out/production/week1/exercises/Ex6ClassObjects.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/.idea/week6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/.idea/week6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/TestCarVan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/TestCarVan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Van.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Van.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex1inheritance/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Asteroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Asteroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Spaceship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6/src/exercises/ex2asteroids/Spaceship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,11 +245,12 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602494354917" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603050169492">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2660" y="286" width="424" height="478" key="FileChooserDialogImpl" timestamp="1603566129950">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602694346555" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603050169492" />
+    <state x="2660" y="286" width="424" height="478" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603566129950" />
     <state width="1877" height="353" key="GridCell.Tab.0.bottom" timestamp="1602621674932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

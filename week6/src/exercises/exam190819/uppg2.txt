@@ -1,0 +1,18 @@
+
+
+2. fst och sec kommer aldrig få exakt samma värde. Det går inte att göra en exakt jämförelse med double.
+Vi kommer att fastna i while-loopen.
+Vi skulle kunna skriva t.ex. Math.abs(fcs-sec) < 0.0005.
+
+
+    int c = 0;
+    double fst = 1;
+    double sec = 2;
+    while (true) {
+        if (fst == sec) {
+        break;
+        }
+    fst = fst + 0.1;
+    c++;
+    }
+    out.println(c);

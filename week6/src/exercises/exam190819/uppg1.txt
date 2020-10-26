@@ -1,0 +1,2 @@
+1.a) Inkrementering ökar en numerisk variabels värde med ett. Inkrementeringsoperatorn ++ ökar variabelns värde med ett.
+  b) Värdeanrop är när argumentvärden kopieras till metodens nyskapade parametrar (utifrån position).

@@ -19,7 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af713fa9-c86e-440b-a0a9-fc1eda31c242" name="Default" comment="uppgifter" />
+    <list default="true" id="af713fa9-c86e-440b-a0a9-fc1eda31c242" name="Default" comment="uppgifter">
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190107/uppg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190107/uppg7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190107/uppg8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190819/uppg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190819/uppg2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190819/uppg3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190819/uppg4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190819/uppg7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam190819/uppg8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam200107/uppg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam200107/uppg5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam200107/uppg7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercises/exam200107/uppg8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pong_klar/out/production/pong/pong/model/Pong.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pong_klar/out/production/pong/pong/model/Pong.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/exam181031/uppg3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/exam181031/uppg3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/exam190819/upg5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/exam190819/uppg5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/exam200107/uppg3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/exam200107/uppg3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/exam200107/uppg4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/exam200107/uppg4.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,22 +75,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tentakit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="exercises.ex1inheritance" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="xlect.inheritance.castclass" />
-      <recent name="xlect.imagewiz.filters" />
-      <recent name="xlect.visitor" />
-      <recent name="samples" />
-      <recent name="exercises.ex1randomwalkers" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/exercises/exam200107" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/exercises/ex2asteroids/xxx" />
@@ -78,8 +92,18 @@
       <recent name="$PROJECT_DIR$/src/samples" />
       <recent name="$PROJECT_DIR$/src/samples/initialization" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="xlect.inheritance.castclass" />
+      <recent name="xlect.imagewiz.filters" />
+      <recent name="xlect.visitor" />
+      <recent name="samples" />
+      <recent name="exercises.ex1randomwalkers" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="exercises.ex1inheritance" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.uppg4 (1)">
+  <component name="RunManager" selected="Application.uppg8">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -92,13 +116,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="uppg3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.exam200107.uppg3" />
+      <module name="week6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.exam200107.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="uppg3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.exam190107.uppg3" />
+      <option name="MAIN_CLASS_NAME" value="exercises.exam200107.uppg3" />
       <module name="week6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercises.exam190107.*" />
+          <option name="PATTERN" value="exercises.exam200107.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,13 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uppg4 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.exam190107.uppg4" />
+    <configuration name="uppg4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.exam200107.uppg4" />
       <module name="week6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercises.exam190107.*" />
+          <option name="PATTERN" value="exercises.exam200107.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,13 +158,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uppg5 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.exam200819.uppg5" />
+    <configuration name="uppg5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.exam200107.uppg5" />
       <module name="week6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercises.exam200819.*" />
+          <option name="PATTERN" value="exercises.exam200107.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,27 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uppg5 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.exam190107.uppg5" />
+    <configuration name="uppg8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.exam200107.uppg8" />
       <module name="week6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercises.exam190107.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="uppg7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.exam181031.uppg7" />
-      <module name="week6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercises.exam181031.*" />
+          <option name="PATTERN" value="exercises.exam200107.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,19 +212,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.uppg3 (1)" />
       <item itemvalue="Application.uppg3" />
-      <item itemvalue="Application.uppg4 (1)" />
-      <item itemvalue="Application.uppg5 (1)" />
-      <item itemvalue="Application.uppg5 (2)" />
-      <item itemvalue="Application.uppg7" />
+      <item itemvalue="Application.uppg4" />
+      <item itemvalue="Application.uppg5" />
+      <item itemvalue="Application.uppg8" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.uppg4 (1)" />
-        <item itemvalue="Application.uppg5 (2)" />
-        <item itemvalue="Application.uppg3" />
-        <item itemvalue="Application.uppg7" />
-        <item itemvalue="Application.uppg5 (1)" />
+        <item itemvalue="Application.uppg8" />
+        <item itemvalue="Application.uppg5" />
+        <item itemvalue="Application.uppg3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -247,55 +269,82 @@
     </state>
     <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603113745758" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603303266904" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1603353099950">
+    <state x="2613" y="324" width="523" height="384" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603698502661">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2613" y="324" width="523" height="384" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603698502661" />
+    <state x="1251" y="80" width="374" height="556" key="#com.intellij.ide.util.MemberChooser" timestamp="1603750632109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603353099950" />
+    <state x="1251" y="80" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603750632109" />
+    <state x="3171" y="83" width="374" height="556" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603713639055" />
+    <state x="693" y="269" width="524" height="494" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603750150624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="269" width="524" height="494" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603750150624" />
     <state x="690" y="274" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1602694368541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602694368541" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603351320014">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2660" y="286" width="424" height="478" key="FileChooserDialogImpl" timestamp="1603620641764">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603114508858" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603351320014" />
-    <state width="1877" height="267" key="GridCell.Tab.0.bottom" timestamp="1603366106644">
+    <state x="2660" y="286" width="424" height="478" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603620641764" />
+    <state width="1878" height="226" key="GridCell.Tab.0.bottom" timestamp="1603752189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603124708616" />
     <state width="1877" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603366106644" />
-    <state width="1877" height="267" key="GridCell.Tab.0.center" timestamp="1603366106644">
+    <state width="1878" height="226" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189877" />
+    <state width="1878" height="141" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603743557526" />
+    <state width="1878" height="226" key="GridCell.Tab.0.center" timestamp="1603752189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603124708616" />
     <state width="1877" height="267" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603366106644" />
-    <state width="1877" height="267" key="GridCell.Tab.0.left" timestamp="1603366106644">
+    <state width="1878" height="226" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189877" />
+    <state width="1878" height="141" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603743557523" />
+    <state width="1878" height="226" key="GridCell.Tab.0.left" timestamp="1603752189876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603124708616" />
     <state width="1877" height="267" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603366106644" />
-    <state width="1877" height="267" key="GridCell.Tab.0.right" timestamp="1603366106644">
+    <state width="1878" height="226" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189876" />
+    <state width="1878" height="141" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603743557522" />
+    <state width="1878" height="226" key="GridCell.Tab.0.right" timestamp="1603752189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603124708616" />
     <state width="1877" height="267" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603366106644" />
-    <state width="1877" height="359" key="GridCell.Tab.1.bottom" timestamp="1603310908138">
+    <state width="1878" height="226" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189877" />
+    <state width="1878" height="141" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603743557523" />
+    <state width="1878" height="226" key="GridCell.Tab.1.bottom" timestamp="1603752189878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310908138" />
-    <state width="1877" height="359" key="GridCell.Tab.1.center" timestamp="1603310908138">
+    <state width="1878" height="226" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189878" />
+    <state width="1878" height="226" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603735024340" />
+    <state width="1878" height="226" key="GridCell.Tab.1.center" timestamp="1603752189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="359" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310908138" />
-    <state width="1877" height="359" key="GridCell.Tab.1.left" timestamp="1603310908138">
+    <state width="1878" height="226" key="GridCell.Tab.1.center/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189877" />
+    <state width="1878" height="226" key="GridCell.Tab.1.center/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603735024340" />
+    <state width="1878" height="226" key="GridCell.Tab.1.left" timestamp="1603752189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="359" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310908138" />
-    <state width="1877" height="359" key="GridCell.Tab.1.right" timestamp="1603310908138">
+    <state width="1878" height="226" key="GridCell.Tab.1.left/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189877" />
+    <state width="1878" height="226" key="GridCell.Tab.1.left/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603735024340" />
+    <state width="1878" height="226" key="GridCell.Tab.1.right" timestamp="1603752189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="359" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603310908138" />
+    <state width="1878" height="226" key="GridCell.Tab.1.right/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1603752189877" />
+    <state width="1878" height="226" key="GridCell.Tab.1.right/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603735024340" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1602694371621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,10 +353,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603438090020" />
-    <state x="525" y="249" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603358014986">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2688" y="436" width="373" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603713137013">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2688" y="436" width="373" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603713137013" />
+    <state x="2445" y="259" width="991" height="619" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603733643778">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="525" y="249" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603358014986" />
+    <state x="2445" y="259" width="991" height="619" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.0.1920.1080/0.0.1920.1040@1920.0.1920.1080" timestamp="1603733643778" />
     <state x="803" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1603016404609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,11 +379,6 @@
           <url>file://$PROJECT_DIR$/src/xlect/init/InstantiateInherit.java</url>
           <line>12</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/exercises/exam200107/uppg4.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />

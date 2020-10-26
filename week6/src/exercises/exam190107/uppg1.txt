@@ -1,0 +1,3 @@
+1. a) En instans är ett objekt av en klass. Alla instanser får sin egen uppsättning av variabler.
+   b) En sidoeffekt kan t.ex. vara när man vill ändra på ett värde i en metod och ett annat värde som man inte vill ändra på ändras.
+
