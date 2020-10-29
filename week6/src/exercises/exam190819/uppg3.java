@@ -16,13 +16,13 @@ public class uppg3 {
 
         reorder(order1, arr);
         System.out.println(Arrays.toString(arr));
-        /*
+
         reorder(order2, arr);
         System.out.println(Arrays.toString(arr));
 
         reorder(order3, arr);
         System.out.println(Arrays.toString(arr));
-        */
+
     }
 
     void reorder(int[] order, int[] arr){
